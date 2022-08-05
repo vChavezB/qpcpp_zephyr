@@ -10,10 +10,11 @@ Module to easily integrate the [QPCPP](https://github.com/QuantumLeaps/qpcpp) fr
 git clone https://github.com/vChavezB/qpcpp_zephyr --recurse-submodules
 ```
 
-2. Add this module to your CMakeLists.txt
+2. Add this module to your CMakeLists.txt at the beginning
 
 ```cmake
 set(ZEPHYR_EXTRA_MODULES ${CMAKE_CURRENT_SOURCE_DIR}/qpcpp_zephyr)
+find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 ```
 
 For this example it is assumed the module was added to the root of your CMake Zephyr Project.
