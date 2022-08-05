@@ -7,7 +7,7 @@ Module to easily integrate the [QPCPP](https://github.com/QuantumLeaps/qpcpp) fr
 1. Clone this repository to your Zephyr project or any place where you want to reference it.
 
 ```bash
-git clone https://github.com/vChavezB/qpcpp_zephyr --recurse-submodules
+git clone https://github.com/vChavezB/qpcpp_zephyr --recurse-submodules --depth 1
 ```
 
 2. Add this module to your CMakeLists.txt at the beginning
